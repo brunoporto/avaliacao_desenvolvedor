@@ -44,3 +44,33 @@ Adicionalmente, tentaremos verificar a sua familiarização com as bibliotecas p
 
 Este desafio foi baseado neste outro desafio: https://github.com/lschallenges/data-engineering
 
+# Instalação
+
+Faça o clone desse repositório:
+
+    git clone git@github.com:brunoporto/avaliacao_desenvolvedor.git
+
+Acesse a pasta gerada:
+
+    cd avaliacao_desenvolvedor
+    
+Instale as dependências do sistema:
+
+    bundle install
+
+Instale as dependências do banco de dados:
+
+    rake db:migrate
+
+Inicie o servidor local para iniciar o sistema:
+
+    rails server
+    
+    
+Acesse o navegador em `http://localhost:3000/
+Para parar o serviço do servidor web, precione `CTRL+C` no terminal onde foi iniciado o serviço.
+
+Para rodar os testes do sistema utilize:
+
+    rake test
+    
