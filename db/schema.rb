@@ -11,17 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151116160841) do
+ActiveRecord::Schema.define(version: 20151116164907) do
+
+  create_table "buyers", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "imports", force: :cascade do |t|
-    t.string   "buyer"
-    t.string   "description"
-    t.decimal  "price"
-    t.string   "quantity"
-    t.string   "address"
-    t.string   "supplier"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer "buyer_id"
+    t.integer "supplier_id"
+    t.string  "description"
+    t.decimal "price",       precision: 10, scale: 2, default: 0.0
+    t.integer "quantity",                             default: 0
+    t.string  "address"
+  end
+
+  add_index "imports", ["buyer_id"], name: "index_imports_on_buyer_id"
+  add_index "imports", ["supplier_id"], name: "index_imports_on_supplier_id"
+
+  create_table "suppliers", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

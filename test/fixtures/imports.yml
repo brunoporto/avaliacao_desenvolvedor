@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  buyer: MyString
+  buyer_id: 1
   description: MyString
   price: 9.99
-  quantity: MyString
+  quantity: 1
   address: MyString
-  supplier: MyString
+  supplier_id: 1
 
 two:
-  buyer: MyString
+  buyer_id: 2
   description: MyString
   price: 9.99
-  quantity: MyString
+  quantity: 1
   address: MyString
-  supplier: MyString
+  supplier_id: 2
