@@ -1,0 +1,32 @@
+<%= form_for(@import, url: imports_save_path) do |f| %>
+  <%= f.file_field :file %>
+  <%= f.submit 'Importar' %>
+<% end %>
+<table>
+  <thead>
+    <tr>
+      <th>Comprador</th>
+      <th>Descriçao</th>
+      <th>Preço</th>
+      <th>Quantidade</th>
+      <th>Endereço</th>
+      <th>Fornecedor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @imports.each do |import| %>
+    <tr>
+      <td><%= import.buyer %></td>
+      <td><%= import.description %></td>
+      <td><%= import.price %></td>
+      <td><%= import.quantity %></td>
+      <td><%= import.address %></td>
+      <td><%= import.supplier %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+
