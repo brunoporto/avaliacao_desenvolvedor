@@ -61,17 +61,16 @@ Instale as dependências do sistema:
 Instale as dependências do banco de dados:
 
     rake db:migrate
+    
+Para rodar os testes do sistema:
 
-Inicie o servidor local para iniciar o sistema:
+    rake test
+
+Inicie um servidor web local para inicializar o sistema:
 
     rails server
     
     
-Acesse o navegador em `http://localhost:3000/`
+Acesse o navegador em `http://localhost:3000/` para acessar o sistema.
 
-Para parar o serviço do servidor web, precione `CTRL+C` no terminal onde foi iniciado o serviço.
-
-Para rodar os testes do sistema utilize:
-
-    rake test
-    
+Para PARA o serviço do servidor web, precione `CTRL+C` no terminal onde foi iniciado o serviço.
