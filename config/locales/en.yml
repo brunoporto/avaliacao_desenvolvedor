@@ -20,4 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  upload_file: "New File to Import"
+  import: "Import File"
+  success_import_message: "Successfully imported file!"
+  invalid_upload_file: "Invalid Upload File!"
+  blank_upload_file: "Cant upload empty file!"
+  only_column_upload_file: "No Records found inside file!"
+

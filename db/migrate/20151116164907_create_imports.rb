@@ -7,6 +7,8 @@ class CreateImports < ActiveRecord::Migration
       t.decimal :price, precision: 10, scale: 2, default: 0.0
       t.integer :quantity, default: 0
       t.string :address
+
+      t.timestamps null: false
     end
   end
 end
