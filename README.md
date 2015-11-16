@@ -67,7 +67,8 @@ Inicie o servidor local para iniciar o sistema:
     rails server
     
     
-Acesse o navegador em `http://localhost:3000/
+Acesse o navegador em `http://localhost:3000/`
+
 Para parar o serviço do servidor web, precione `CTRL+C` no terminal onde foi iniciado o serviço.
 
 Para rodar os testes do sistema utilize:
