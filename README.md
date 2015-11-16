@@ -17,7 +17,9 @@ Sua tarefa é criar uma interface web que aceite upload de arquivos, normalize o
 
 Sua aplicação web DEVE:
 
-1. Aceitar (via um formulário) o upload de arquivos text, com dados separados por TAB testar o aplicativo usando o arquivo fornecido. A primeira linha do arquivo tem o nome das colunas. Você pode assumir que as colunas estarão sempre nesta ordem, e que sempre haverá uma linha de cabeçalho. Um arquivo de exemplo chamado 'dados.txt' está incluído neste repositório.
+1. Aceitar (via um formulário) o upload de arquivos text, com dados separados por TAB testar o aplicativo usando o arquivo fornecido.
+    A primeira linha do arquivo tem o nome das colunas. Você pode assumir que as colunas estarão sempre nesta ordem, e que sempre haverá uma linha de cabeçalho.
+    Um arquivo de exemplo chamado 'dados.txt' está incluído neste repositório.
 2. Interpretar ("parsear") o arquivo recebido, normalizar os dados, e salvar corretamente a informação em um banco de dados relacional.
 3. Exibir todos os registros importados, bem como a receita bruta total dos registros contidos no arquivo enviado após o upload + parser.
 4. Se sua vaga é para Ruby e Ruby On Rails, ser escrita obrigatoriamente em: Ruby 2.1+ Rails 4 e SQLite 
